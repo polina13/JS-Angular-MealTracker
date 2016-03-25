@@ -13,8 +13,8 @@ import { MealPipe } from './meal.pipe';
   template: `
     <select (change)="mealChange($event.target.value)" class="filter">
       <option value="">Show All</option>
-      <option value="Unhealthy">Unhealthy:cals>300</option>
-      <option value="Healthy">Healthy:cals<300</option>
+      <option value="unhealthy">Unhealthy:cals>300</option>
+      <option value="healthy">Healthy:cals<300</option>
     </select>
     <meal-display *ngFor="#currentMeal of mealList | meal:filterMeal"
       (click)="mealClicked(currentMeal)"
@@ -44,7 +44,7 @@ export class MealListComponent {
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }
-  createMeal(mealArray: string[]): void {
+  createMeal(mealArray): void {
     // try to create error message to show to enter corrent input
     this.mealList.push(
       new Meal(mealArray[0], mealArray[1], mealArray[2], Number(mealArray[3]), this.mealList.length)

@@ -1,17 +1,20 @@
 import { Component } from 'angular2/core';
 import { MealListComponent } from './meal-list.component';
-import { NewMealComponent } from './new-meal.component';
+// import { NewMealComponent } from './new-meal.component';
 import { Meal } from './meal.model';
 
 @Component ({
   selector: 'my-app',
-  directives: [ NewMealComponent, MealListComponent],
+  directives: [ MealListComponent],
   template:`
   <div class="container">
     <h1>Meal Tracker!</h1>
+    <meal-list
+      [mealList]="meals"
+      (onMealSelect)="mealWasSelected($event)">
+    </meal-list>
   </div>
-
-  `
+    `
 })
 
 export class AppComponent {
