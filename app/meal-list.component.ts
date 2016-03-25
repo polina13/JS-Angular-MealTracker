@@ -47,7 +47,7 @@ export class MealListComponent {
     this.onMealSelect.emit(clickedMeal);
   }
   createMeal(mealArray: string): void {
-    // try to create error message to show to enter corrent input
+    // create error message to show to enter corrent input
     this.mealList.push(
       new Meal(mealArray[0], mealArray[1], mealArray[2], Number(mealArray[3]), this.mealList.length)
     );

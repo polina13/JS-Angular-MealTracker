@@ -19,6 +19,3 @@ import { Meal } from './meal.model';
 export class MealComponent {
   public meal: Meal;
 }
-
-
-// on this page i need to only leave the name
