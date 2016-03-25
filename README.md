@@ -12,17 +12,17 @@ JavaScript: Angular2 Meal Tracker App. This application serves as a platform for
 
 1. Open Terminal and clone into the Angular2 Skeleton: ```https://github.com/polina13/JS-AnguilarSkeleton.git```
 2. Within the top-level of the project directory, run:
-  ** $ npm install
-  ** $ bower install
-  ** Install globals if needed (Gulp, Bower, Sass, Typescript packages)**
-  ** $npm install gulp -g
-  ** $npm install bower -g
-  ** $npm install sass
-  ** $npm install typescript -g
-  ** $npm install atom-typescript
-  ** $ gulp build
-  ** $ gulp serve
-  ** $ tsc -w
+  * $ npm install
+  * $ bower install
+  * Install globals if needed (Gulp, Bower, Sass, Typescript packages)**
+  * $npm install gulp -g
+  * $npm install bower -g
+  * $npm install sass
+  * $npm install typescript -g
+  * $npm install atom-typescript
+  * $ gulp build
+  * $ gulp serve
+  * $ tsc -w
 
   *** Note: If using personal device, the terminal may ask for administrative rights when installing globals: Run : $ sudo npm install ....(globals ...)
 

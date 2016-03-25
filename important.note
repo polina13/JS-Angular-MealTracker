@@ -1,4 +1,0 @@
-1. We use npm install and bower install to install our dependencies.
-2. Then we install any global packages that we need, which aren't tracked by our manifest files, such as gulp, bower, sass, typescript, and our text editor's typescript packages.
-3. Then we can build our whole project with gulp build.
-4. And run it with: gulp serve.
