@@ -17,14 +17,14 @@ import { MealCaloriesPipe } from './mealCalories.pipe';
       <option value="unhealthy">Unhealthy:cals>300</option>
       <option value="healthy">Healthy:cals<300</option>
     </select>
-    <meal-display *ngFor="#currentMeal of mealList | calories:filterCalories"
-      (click)="mealClicked(currentMeal)"
-      [class.selected]="currentMeal === selectedMeal"
-      [meal]="currentMeal">
-    </meal-display>
+    <div *ngFor="#currentMeal of mealList | calories:filterCalories">
+      <h3 (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal">
+        {{ currentMeal.name }}
+      </h3>
+      <meal-display [meal]="currentMeal" *ngIf="currentMeal === selectedMeal"></meal-display>
+    </div>
     <div class="container">
-      <new-meal     (onSubmitNewMeal)="createMeal($event)">
-      </new-meal>
+      <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
     </div>
     <div class="container">
       <edit-meal-details *ngIf="selectedMeal"

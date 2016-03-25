@@ -1,16 +1,23 @@
-h1 {
-  color: blue;
+#page-title {
+  color: #524A54;
+  font-size: 72px;
+  text-align:  center;
 }
-
-/*add picture*/
+.heading {
+  background-color: #67A96A;
+}
+/*add picture-*/
 /*add styling*/
 /*make the box look pretty*/
 
 body {
-  color: gray;
+  background-color: #857889;
 }
 
 title {
   font-style: italic;
   font-size: 35px;
+}
+.selected {
+  color: #DDD;
 }
