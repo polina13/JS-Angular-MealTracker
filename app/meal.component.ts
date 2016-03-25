@@ -7,10 +7,10 @@ import { Meal } from './meal.model';
   template: `
     <div class="container">
       <div>
-        <h2>Name of Meal: {{ meal.name }}</h2>
-        <h3>Description of your meal: {{ meal.description }}</h3>
-        <p>Details: {{ meal.details }}</p>
-        <p>Calories: {{ meal.calories }}</p>
+        <h3>Name of Meal: {{ meal.name }}</h3>
+        <p>Description of your meal: {{ meal.description }}</p>
+        <li>Details: {{ meal.details }}</li>
+        <li>Calories: {{ meal.calories }}</li>
       </div>
     </div>
   `
@@ -19,3 +19,6 @@ import { Meal } from './meal.model';
 export class MealComponent {
   public meal: Meal;
 }
+
+
+// on this page i need to only leave the name

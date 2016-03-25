@@ -7,10 +7,10 @@ import { Meal } from './meal.model';
   template: `
     <div class="meal-form row">
       <h3>Create your meal!</h3>
-        <input placeholder="Name" type="text" class="col-md-4 input-md" #newName>
-        <input placeholder="Meal-Description" type="text" class="col-md-4 input-md" #newDescription>
-        <input placeholder="Details" type="text" class="col-md-4 input-md" #newDetails>
-        <input placeholder="calories" type="number" class="col-md-4 input-md" #newCalories>
+        <input placeholder="Name" type="text" class="col-sm-8 input-lg" #newName>
+        <input placeholder="Meal-Description" type="text" class="col-sm-8 input-lg" #newDescription>
+        <input placeholder="Details" type="text" class="col-sm-8 input-lg" #newDetails>
+        <input placeholder="calories" type="number" class="col-sm-8 input-lg" #newCalories>
         <button (click)="addMeal(newName, newDescription, newDetails, newCalories)" class="btn btn-info">Add Meal</button>
     </div>
   `
@@ -26,11 +26,11 @@ export class NewMealComponent {
           userDescription: HTMLInputElement,
           userDetails: HTMLInputElement,
           userCalories: HTMLInputElement) {
-    var mealArray: string[]=[userName.value,
+            this.newMeal = [userName.value,
                             userDescription.value,
                             userDetails.value,
                             userCalories.value];
-    this.onSubmitNewMeal.emit(mealArray);
+    this.onSubmitNewMeal.emit(this.newMeal);
     userName.value="";
     userDescription.value="";
     userDetails.value="";
