@@ -2,11 +2,13 @@ import { Component, EventEmitter } from 'angular2/core';
 import { MealComponent } from './meal.component';
 import { NewMealComponent } from './new-meal.component';
 import { Meal } from './meal.model';
+import { MealPipe } from './meal.pipe';
 
 @Component ({
   selector: 'meal-list',
   inputs: ['mealList'],
   outputs: ['onMealSelect'],
+  pipes: [MealPipe],
   directives: [MealComponent, NewMealComponent],
   template: `
     <select (change)="mealChange($event.target.value)" class="filter">
