@@ -22,7 +22,7 @@ export class AppComponent {
   public meals: Meal[];
   constructor(){
     this.meals = [
-      new Meal("Greek Salad", "Tomatoes, cucumbers, and fresh onion, drizzled with vinegar and olive oil", "very healthy and fulfilling", 270, 0)
+      new Meal("Greek Salad", "Tomatoes, cucumbers, and fresh onion,vinegar and olive oil", "very healthy and fulfilling", 270, 0)
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {

@@ -1,23 +1,40 @@
 #page-title {
   color: #524A54;
-  font-size: 72px;
+  font-size: 52px;
   text-align:  center;
 }
 .heading {
   background-color: #67A96A;
 }
-/*add picture-*/
-/*add styling*/
-/*make the box look pretty*/
 
 body {
   background-color: #857889;
+  padding: 25px;
 }
 
 title {
   font-style: italic;
-  font-size: 35px;
+  font-size: 25px;
 }
 .selected {
   color: #DDD;
+}
+
+.filter{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.meal-form {
+  /*background-color: tan;*/
+  padding: 14px;
+
+}
+
+.edit-form {
+  /*background-color: green;*/
+  padding: 14px;
+
+
 }

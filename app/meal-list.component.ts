@@ -46,12 +46,13 @@ export class MealListComponent {
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }
+
   createMeal(mealArray: string): void {
-    // create error message to show to enter corrent input
     this.mealList.push(
       new Meal(mealArray[0], mealArray[1], mealArray[2], Number(mealArray[3]), this.mealList.length)
     );
   }
+
   mealChange(filterOption) {
     this.filterCalories = filterOption;
   }
