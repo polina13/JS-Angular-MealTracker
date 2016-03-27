@@ -14,8 +14,8 @@ import { MealCaloriesPipe } from './mealCalories.pipe';
   template: `
     <select (change)="mealChange($event.target.value)" class="filter">
       <option value="">Show All</option>
-      <option value="unhealthy">Unhealthy:cals>300</option>
-      <option value="healthy">Healthy:cals<300</option>
+      <option value="unhealthy">Unhealthy:Calories:300 or more</option>
+      <option value="healthy">Healthy:Calories:300 or less</option>
     </select>
     <div *ngFor="#currentMeal of mealList | calories:filterCalories">
       <h3 (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal">

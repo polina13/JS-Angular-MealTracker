@@ -6,7 +6,7 @@ import { Meal } from './meal.model';
   inputs: ['meal'],
   template: `
     <div class="container">
-      <div>
+      <div class="meal-entry">
         <h3>Name of Meal: {{ meal.name }}</h3>
         <p>Description of your meal: {{ meal.description }}</p>
         <li>Details: {{ meal.details }}</li>
