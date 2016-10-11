@@ -21,7 +21,7 @@ import { Meal } from './meal.model';
       (onMealSelect)="mealWasSelected($event)">
     </meal-list>
   </div>
-    `
+  `
 })
 
 export class AppComponent {

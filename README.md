@@ -6,7 +6,7 @@
 
 ## Description
 
-JavaScript: Angular2 Meal Tracker App. This application serves as a platform for the user to fill a form and add a meal, its description and calories for that particular chosen meal. The app also provides the user with ability to filter the meals by showing all, only healthy (meal < 300 calories) and unhealthy (meal > 300 calories); and edit them.
+Angular2 JS Meal Tracker App that serves as a platform for the user to fill a form and add a meal, its description and calories for that particular chosen meal. It also allows the user with ability to filter the meals by showing all, only healthy (meal < 300 calories) and unhealthy (meal > 300 calories); and edit them. 
 
 ## Setup/Installation Requirements
 
