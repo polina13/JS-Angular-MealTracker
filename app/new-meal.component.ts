@@ -5,14 +5,19 @@ import { Meal } from './meal.model';
   selector: 'new-meal',
   outputs: ['onSubmitNewMeal'],
   template: `
+  <div class="container-fuild">
     <div class="meal-form row">
-      <h3 class="create-meal">Create your meal!</h3>
-        <input placeholder="Name" type="text" class="col-sm-8 input-md" #newName>
-        <input placeholder="Meal-Description" type="text" class="col-sm-8 input-md" #newDescription>
-        <input placeholder="Details" type="text" class="col-sm-8 input-md" #newDetails>
-        <input placeholder="Calories" type="number" class="col-sm-8 input-md" #newCalories>
-        <button (click)="addMeal(newName, newDescription, newDetails, newCalories)" class="btn btn-info">Add Meal</button>
+      <div class="row">
+        <h3 class="create-meal text-primary text-center">Create your meal!</h3>
+          <input placeholder="Name" type="text" class="col-md-6 input-md" #newName>
+          <input placeholder="Meal-Description" type="text" class="col-md-6 input-md" #newDescription>
+          <input placeholder="Details" type="text" class="col-md-6 input-md" #newDetails>
+          <input placeholder="Calories" type="number" class="col-md-6 input-md" #newCalories>
+          <br></br>
+          <button (click)="addMeal(newName, newDescription, newDetails, newCalories)" class="btn btn-info">Add Meal</button>
     </div>
+  </div>
+
   `
 })
 
